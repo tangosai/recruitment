@@ -57,16 +57,16 @@ export default function Dashboard() {
             //   <p>{password.password}</p>
             // </div>
             <>
-              <div class="profile_content">
-                <div class="group mt-2">
+              <div className="profile_content">
+                <div className="group mt-2">
                   <label>Name</label>
                   <h4 className="text-xl capitalize">{password.fullName}</h4>
                 </div>
-                <div class="group mt-2">
+                <div className="group mt-2">
                   <label>Email</label>
                   <h4 className="text-xl">{password.email}</h4>
                 </div>
-                <div class="group mt-2">
+                <div className="group mt-2">
                   <label>Email</label>
                   <h4 className="text-xl">{password.phoneNumber}</h4>
                 </div>
