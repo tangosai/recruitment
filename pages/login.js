@@ -20,7 +20,7 @@ export default function Login() {
   const login = () => {
     signInWithEmailAndPassword(auth, loginData.emailId, loginData.password)
       .then((res) => {
-        localStorage.setItem("userEmail", res.user.email);
+        sessionStorage.setItem("userEmail", res.user.email);
         toast.success("You are now Successfully Logged In..");
         setTimeout(() => {
           router.push("/dashboard");

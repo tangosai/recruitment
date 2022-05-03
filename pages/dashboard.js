@@ -14,7 +14,7 @@ import { RiLogoutCircleLine } from "react-icons/ri";
 export default function Dashboard() {
   //   const userEmail = sessionStorage.getItem("userEmail", userEmail);
   const collectionRef = collection(database, "userPassword");
-  const userEmailId = localStorage.getItem("userEmail");
+  const userEmailId = sessionStorage.getItem("userEmail");
   const emailQuery = query(collectionRef, where("email", "==", userEmailId));
   const [passwordsArray, setpasswordsArray] = useState([]);
   const auth = getAuth();
