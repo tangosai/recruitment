@@ -1,9 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -13,4 +16,54 @@ a {
 
 * {
   box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cdcdcd;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+.logo {
+  width: 200px;
+}
+.logo img {
+  width: 100%;
+}
+.menu li {
+  margin-left: 25px;
+}
+
+.sa-img {
+  position: relative;
+}
+.sa-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: linear-gradient(
+    0deg,
+    rgba(9, 19, 33, 1) 0%,
+    rgba(255, 255, 255, 0) 98%
+  );
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
 }
