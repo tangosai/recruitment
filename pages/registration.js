@@ -54,7 +54,7 @@ export default function Registration() {
             <img src="/logo.svg" alt="logo" />
           </div>
           <div className="mb-3">
-            <h1 className="text-2xl font-bold">Get's started</h1>
+            <h1 className="text-2xl font-bold">Get&#39;s started</h1>
             <p>
               Already have an account ?{" "}
               <Link href="/login">
